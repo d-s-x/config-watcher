@@ -3,7 +3,7 @@ FROM $BASEIMAGE
 
 USER 65534
 
-ARG BINARY=configmap-reload
-COPY out/$BINARY /configmap-reload
+ARG BINARY=config-watcher
+COPY out/$BINARY /config-watcher
 
-ENTRYPOINT ["/configmap-reload"]
+ENTRYPOINT ["/config-watcher"]
